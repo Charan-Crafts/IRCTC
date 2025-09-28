@@ -1,0 +1,13 @@
+[ {
+  "userName" : "Charan",
+  "userId" : "e50f243f4f424c0eba0b6a6a2bdd627e",
+  "password" : "123",
+  "hashedPassword" : "$2a$05$eP7FyXtVgHWM.NQEEJPSpuF/OBaAdFHT6jf3cOBUheQi3N9x92iYm",
+  "bookedTickets" : [ ]
+}, {
+  "userName" : "Charan",
+  "userId" : "a51778f7b2584133b7e19c0e99b807bc",
+  "password" : "123",
+  "hashedPassword" : "$2a$05$qHCz5RQGgM.dAy8fj.4LaeKLgbBSYNiScoEIIvSmr1INyoKQIUtc6",
+  "bookedTickets" : [ ]
+} ]

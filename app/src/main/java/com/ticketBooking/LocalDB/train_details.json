@@ -1,0 +1,16 @@
+{
+  "train_name": "BangaloreExpress",
+  "train_number": "123231",
+  "seats": [
+    [0,0,0,0,0],
+    [0,0,0,0,0],
+    [0,0,0,0,0]
+  ],
+  "route_map": {
+    "Guntakal": {
+      "arrival_time": "",
+      "departure_time": ""
+    }
+  },
+  "intermediate_stations": ["Guntakal","Anantapur","Dharmavaram","Hindupur","Yashwanthpur","KSR"]
+}
