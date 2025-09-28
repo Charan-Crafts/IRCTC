@@ -20,6 +20,8 @@ public class Users {
 
     private List<Tickets> bookedTickets;
 
+    private String userEmail;
+
     public Users(){}
 
     public String getUserName() {
@@ -62,9 +64,18 @@ public class Users {
         this.bookedTickets=bookedTicket;
     }
 
-    public Users(String userName, String password){
+    public String getEmail(){
+        return this.userEmail;
+    }
+
+    public void setEmail(String email){
+        this.userEmail = email;
+    }
+
+    public Users(String userName, String userEmail,String password){
         this.userName = userName;
         UUID uuid = UUID.randomUUID();
+        this.userEmail=userEmail;
         this.userId = uuid.toString().replace("-","");
         this.hashedPassword= UserUtils.generatehashPassword(password);
         this.password=password;

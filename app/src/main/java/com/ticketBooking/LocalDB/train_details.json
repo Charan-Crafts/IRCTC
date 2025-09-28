@@ -1,16 +1,23 @@
-{
-  "train_name": "BangaloreExpress",
-  "train_number": "123231",
-  "seats": [
-    [0,0,0,0,0],
-    [0,0,0,0,0],
-    [0,0,0,0,0]
-  ],
-  "route_map": {
-    "Guntakal": {
-      "arrival_time": "",
-      "departure_time": ""
-    }
-  },
-  "intermediate_stations": ["Guntakal","Anantapur","Dharmavaram","Hindupur","Yashwanthpur","KSR"]
-}
+[ {
+  "trainNo" : 35171,
+  "trainName" : "KSR Express",
+  "availableSeats" : [ [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ] ],
+  "stops" : [ "Station A", "Station B", "Station C", "Station D" ],
+  "routeMap" : {
+    "Station A" : "08:00:00",
+    "Station B" : "09:30:00",
+    "Station C" : "11:00:00",
+    "Station D" : "12:30:00"
+  }
+}, {
+  "trainNo" : 86769,
+  "trainName" : "Shatabdi Express",
+  "availableSeats" : [ [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ] ],
+  "stops" : [ "Delhi", "Ghaziabad", "Kanpur", "Lucknow" ],
+  "routeMap" : {
+    "Kanpur" : "11:00:00",
+    "Lucknow" : "12:30:00",
+    "Ghaziabad" : "09:30:00",
+    "Delhi" : "08:00:00"
+  }
+} ]
