@@ -2,7 +2,26 @@
   "userName" : "Charan",
   "userId" : "735fe77cc15b4364b205a389979f7480",
   "userEmail" : "charan@gmail.com",
-  "myTickets" : [ ]
+  "myTickets" : [ {
+    "ticketId" : 6512,
+    "source" : "Guntakal",
+    "destination" : "KSR",
+    "date" : 1759145578242,
+    "trainDetails" : [ {
+      "trainNumber" : 84086,
+      "trainName" : "Shatabdi Express",
+      "intermediateStations" : [ "Agra Cantt", "Gwalior", "Jhansi" ],
+      "source" : "New Delhi",
+      "destination" : "Bhopal Jn",
+      "routeMap" : {
+        "Bhopal Jn" : "14:30:00",
+        "Jhansi" : "10:40:00",
+        "New Delhi" : "06:00:00",
+        "Agra Cantt" : "07:45:00",
+        "Gwalior" : "09:15:00"
+      }
+    } ]
+  } ]
 }, {
   "userName" : "Sudha",
   "userId" : "c2438eb3b40d4a3290f5d86cb40a6d73",

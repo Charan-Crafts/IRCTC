@@ -2,6 +2,8 @@ package com.ticketBooking.Services;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ticketBooking.Entites.Tickets;
+import com.ticketBooking.Entites.Train;
 import com.ticketBooking.Entites.Users;
 
 import javax.swing.*;
@@ -65,4 +67,75 @@ public class UserServices {
 
     }
 
+
+    // Get the pariticular train Instance first
+
+    public static void bookTicket(String from , String to, int trainNumber,String email){
+
+        // Check wheater the trian is existing with the train number or not
+
+       try
+       {
+           Train train = TrainServices.findTrainByNumber(trainNumber);
+
+           if(train == null){
+
+               System.out.println("Sorry Invalid trian Number ");
+
+               return;
+           }
+
+           // Now create the Ticket Instance
+
+           Tickets newTicket = new Tickets(from,to,train);
+
+           UserServices.addTicketIntoAccount(newTicket,email);
+
+
+
+           // Now add this ticket to the User
+
+       }catch (Exception e){
+           System.out.println(e);
+       }
+
+
+
+    }
+
+
+    public static void addTicketIntoAccount(Tickets ticket,String email) throws IOException{
+
+        // find the user based upon the email
+
+        File  file = new File(USER_DETAILS_PATH);
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        List<Users> userDetails = new ArrayList<>();
+
+        if(file.exists() && file.length()!=0){
+
+            userDetails = mapper.readValue(file, new TypeReference<List<Users>>() {
+            });
+
+        }
+
+        // Check the particular user
+
+        for(Users userInfo : userDetails){
+
+            if(userInfo.getUserEmail().equalsIgnoreCase(email)){
+
+                List<Tickets> ticketList = userInfo.getMyTickets();
+
+                ticketList.add(ticket);
+
+                System.out.println("Thank U !");
+            }
+        }
+
+        mapper.writerWithDefaultPrettyPrinter().writeValue(file,userDetails);
+        System.out.println("Thank You !");
+    }
 }

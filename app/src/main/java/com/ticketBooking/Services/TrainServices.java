@@ -89,4 +89,37 @@ public class TrainServices {
         System.out.println("No Trains found");
 
     }
+
+
+
+    public static  Train findTrainByNumber(int trainNumber) throws  IOException{
+
+        // Train instance
+
+        Train trainInstance = null;
+
+        File file = new File(TRAIN_DETAILS);
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        List<Train> trainDetails = new ArrayList<>();
+
+        if(file.exists() && file.length()!=0)
+        {
+            trainDetails = mapper.readValue(file, new TypeReference<List<Train>>() {
+            });
+        }
+
+        for(Train train : trainDetails){
+
+            if(train.getTrainNumber()==trainNumber){
+
+                trainInstance=train;
+
+                return trainInstance;
+            }
+        }
+
+        return trainInstance;
+    }
 }
