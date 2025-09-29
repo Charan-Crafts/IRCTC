@@ -21,6 +21,26 @@
         "Gwalior" : "09:15:00"
       }
     } ]
+  }, {
+    "ticketId" : 154,
+    "source" : "Kota Jn",
+    "destination" : "Surat",
+    "date" : 1759146194288,
+    "trainDetails" : [ {
+      "trainNumber" : 9486,
+      "trainName" : "Rajdhani Express",
+      "intermediateStations" : [ "Mathura Jn", "Kota Jn", "Vadodara Jn", "Surat" ],
+      "source" : "New Delhi",
+      "destination" : "Mumbai Central",
+      "routeMap" : {
+        "Kota Jn" : "21:10:00",
+        "New Delhi" : "16:55:00",
+        "Mathura Jn" : "18:20:00",
+        "Surat" : "05:30:00",
+        "Vadodara Jn" : "04:00:00",
+        "Mumbai Central" : "08:15:00"
+      }
+    } ]
   } ]
 }, {
   "userName" : "Sudha",

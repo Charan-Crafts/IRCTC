@@ -10,6 +10,7 @@ public class Tickets {
 
     private String source ;
 
+    public  Tickets(){}
     private String destination;
 
     private Date date;
