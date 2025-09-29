@@ -1,10 +1,25 @@
-[
-  {
-    "userName": "Charan",
-    "userId": "0b23ec2e5b5e4c3b95cfdc764c4fb686",
-    "password": "123",
-    "hashedPassword": "$2a$05$STAU/vj5T5iWnK8ZxJEh3.wlRvIIkCAqdP8ug/dyCXojGQdW8PJ/a",
-    "bookedTickets": [],
-    "email": "charan@gmail.com"
-  }
-]
+[ {
+  "userName" : "Charan",
+  "userId" : "0b23ec2e5b5e4c3b95cfdc764c4fb686",
+  "password" : "123",
+  "hashedPassword" : "$2a$05$STAU/vj5T5iWnK8ZxJEh3.wlRvIIkCAqdP8ug/dyCXojGQdW8PJ/a",
+  "bookedTickets" : [ {
+    "ticketId" : 6897,
+    "source" : "Delhi",
+    "destination" : "Kanpur",
+    "trainDetails" : {
+      "trainNo" : 86769,
+      "trainName" : "Shatabdi Express",
+      "availableSeats" : [ [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ] ],
+      "stops" : [ "Delhi", "Ghaziabad", "Kanpur", "Lucknow" ],
+      "routeMap" : {
+        "Kanpur" : "11:00:00",
+        "Lucknow" : "12:30:00",
+        "Ghaziabad" : "09:30:00",
+        "Delhi" : "08:00:00"
+      }
+    },
+    "date" : null
+  } ],
+  "email" : "charan@gmail.com"
+} ]

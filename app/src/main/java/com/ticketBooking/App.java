@@ -22,5 +22,7 @@ public class App {
         TrainServices trainServices = new TrainServices();
 
         trainServices.findTrains("Delhi","Kanpur");
+
+        trainServices.bookTicket(86769,"Delhi","Kanpur","charan@gmail.com");
     }
 }

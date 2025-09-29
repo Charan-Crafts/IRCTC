@@ -90,5 +90,15 @@ public class Users {
         System.out.println("Tickets Booked :"+getBookedTickets());
     }
 
-
+    @Override
+    public String toString() {
+        return "Users{" +
+                "userName='" + userName + '\'' +
+                ", userId='" + userId + '\'' +
+                ", password='" + password + '\'' +
+                ", hashedPassword='" + hashedPassword + '\'' +
+                ", bookedTickets=" + bookedTickets +
+                ", userEmail='" + userEmail + '\'' +
+                '}';
+    }
 }
