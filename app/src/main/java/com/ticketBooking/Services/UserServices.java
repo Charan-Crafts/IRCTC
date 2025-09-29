@@ -61,7 +61,7 @@ public class UserServices {
         mapper.writerWithDefaultPrettyPrinter().writeValue(file,userList);
 
         System.out.println("User is added into the DB");
-
+        return;
 
     }
 

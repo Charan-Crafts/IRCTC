@@ -1,0 +1,55 @@
+[ {
+  "trainNumber" : 84086,
+  "trainName" : "Shatabdi Express",
+  "intermediateStations" : [ "Agra Cantt", "Gwalior", "Jhansi" ],
+  "source" : "New Delhi",
+  "destination" : "Bhopal Jn",
+  "routeMap" : {
+    "Bhopal Jn" : "14:30:00",
+    "Jhansi" : "10:40:00",
+    "New Delhi" : "06:00:00",
+    "Agra Cantt" : "07:45:00",
+    "Gwalior" : "09:15:00"
+  }
+}, {
+  "trainNumber" : 9486,
+  "trainName" : "Rajdhani Express",
+  "intermediateStations" : [ "Mathura Jn", "Kota Jn", "Vadodara Jn", "Surat" ],
+  "source" : "New Delhi",
+  "destination" : "Mumbai Central",
+  "routeMap" : {
+    "Kota Jn" : "21:10:00",
+    "New Delhi" : "16:55:00",
+    "Mathura Jn" : "18:20:00",
+    "Surat" : "05:30:00",
+    "Vadodara Jn" : "04:00:00",
+    "Mumbai Central" : "08:15:00"
+  }
+}, {
+  "trainNumber" : 25727,
+  "trainName" : "Garib Rath Express",
+  "intermediateStations" : [ "Kurnool City", "Dharmavaram", "Hindupur" ],
+  "source" : "Secunderabad",
+  "destination" : "Yesvantpur",
+  "routeMap" : {
+    "Hindupur" : "05:40:00",
+    "Yesvantpur" : "07:50:00",
+    "Kurnool City" : "23:45:00",
+    "Dharmavaram" : "03:15:00",
+    "Secunderabad" : "20:30:00"
+  }
+}, {
+  "trainNumber" : 22797,
+  "trainName" : "Howrah–Yesvantpur Duronto Express",
+  "intermediateStations" : [ "Bhubaneswar", "Vijayawada", "Guntakal Jn", "Renigunta" ],
+  "source" : "Howrah",
+  "destination" : "Yesvantpur",
+  "routeMap" : {
+    "Yesvantpur" : "16:00:00",
+    "Bhubaneswar" : "16:25:00",
+    "Howrah" : "10:50:00",
+    "Vijayawada" : "04:00:00",
+    "Guntakal Jn" : "09:15:00",
+    "Renigunta" : "10:45:00"
+  }
+} ]
