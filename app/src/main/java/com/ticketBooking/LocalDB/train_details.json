@@ -20,4 +20,26 @@
     "Ghaziabad" : "09:30:00",
     "Delhi" : "08:00:00"
   }
+}, {
+  "trainNo" : 21800,
+  "trainName" : "Rajdhani Express",
+  "availableSeats" : [ [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ] ],
+  "stops" : [ "Mumbai", "Surat", "Vadodara", "Delhi" ],
+  "routeMap" : {
+    "Surat" : "09:30:00",
+    "Vadodara" : "11:00:00",
+    "Mumbai" : "08:00:00",
+    "Delhi" : "12:30:00"
+  }
+}, {
+  "trainNo" : 38472,
+  "trainName" : "Garib Rath Express",
+  "availableSeats" : [ [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0 ] ],
+  "stops" : [ "Chennai", "Vijayawada", "Hyderabad", "Nagpur" ],
+  "routeMap" : {
+    "Chennai" : "08:00:00",
+    "Vijayawada" : "09:30:00",
+    "Nagpur" : "12:30:00",
+    "Hyderabad" : "11:00:00"
+  }
 } ]

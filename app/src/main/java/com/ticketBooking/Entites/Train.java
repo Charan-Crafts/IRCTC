@@ -71,4 +71,15 @@ public class Train {
         this.stops=stops;
         this.routeMap=routeMap;
     }
+
+    @Override
+    public String toString() {
+        return "Train{" +
+                "trainNo=" + trainNo +
+                ", trainName='" + trainName + '\'' +
+                ", availableSeats=" + availableSeats +
+                ", stops=" + stops +
+                ", routeMap=" + routeMap +
+                '}';
+    }
 }
